@@ -12,7 +12,7 @@ header {
 }
 
 .left-sidebar {
-    background: lightcyan;
+    background: azure;
     color:black;
     grid-column: 1 / 2;
 }
