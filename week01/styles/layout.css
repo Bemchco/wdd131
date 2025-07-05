@@ -49,7 +49,6 @@ nav {
 
 .navigation li {
     flex: 1 1 auto;
-    /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
 }
 
 .navigation a {
