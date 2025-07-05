@@ -1,0 +1,66 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 300px 1fr auto;
+}
+
+header {
+    
+    background: lightblue;
+    padding: 2rem;
+    grid-column: 1 / 4;
+}
+
+.left-sidebar {
+    background: rgb(22, 19, 219);
+    grid-column: 1 / 2;
+}
+
+.right-sidebar {
+    background: yellow;
+    grid-column: 3 / 4;
+}
+
+footer {
+    background: lightblue;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+.left-sidebar,
+.right-sidebar {
+    padding: 1rem;
+}
+
+nav {
+    margin: 0 auto 2rem;
+    max-width: 90vw;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    align-items: center;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+    /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+}
+
+.navigation a {
+    display: block;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
