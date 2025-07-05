@@ -12,7 +12,8 @@ header {
 }
 
 .left-sidebar {
-    background: rgb(22, 19, 219);
+    background: lightcyan;
+    color:black;
     grid-column: 1 / 2;
 }
 
