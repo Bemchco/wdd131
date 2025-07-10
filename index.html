@@ -1,103 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> WDD 131 - Dynamic Web Fundamentals - Brandon Chinchilla</title>
-
-    <meta name="course" content="WDD 131 - Dynamic Web Fundamentals">
-    <meta name="author" content="Brandon Chinchilla">
-    <meta name="description" content="This page will contain usefull links to redirect to personal
-  pages that will facilitate naviation and work in this project in general for the WDD 131 course">
-
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap" rel="stylesheet">
-
-
+    <title>WDD 131: Dynamic Web Fundamentals - Brandon Chinchilla</title>
+    <link rel="stylesheet" href="/styles/base.css">
     <script src="scripts/getdates.js"></script>
 </head>
 
 <body>
-    <header>
-        <span id="course-title" class="title">WDD 131 - Dynamic Web Fundamentals</span>
-        <nav>
-            <ul class="navigation">
-                <li><a href="www.linkedin.com/in/brandon-chinchilla-28aba0358" title="LinkedIn">LinkedIn</a></li>
-                <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/11?lang=eng&id=p22-p23#p22"
-                        title="Scripture">Scripture</a></li>
-                <li><a href="#" title="Final Project">Final Project</a></li>
-            </ul>
-        </nav>
 
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span>Brandon Chinchilla</span></h1>
     </header>
-    <main style="margin: 40px;">
-        <section class="card">
-            <div class="card-header">
-                <h2>About Me</h2>
-            </div>
-            <div class="card-content">
-                <div class="card-text">
-                    <h1>
-                        Brandon Chinchilla
-                    </h1>
+
+    <nav>
+        <a href="#">LinkedIn</a>
+        <a href="#">Canvas</a>
+        <a href="#">Scripture</a>
+        <a href="#">Final Project</a>
+    </nav>
+
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <img src="images/myProfilePicture.jpeg" alt="My Profile Picture">
+            <p>
+                My name is Brandon Chinchilla, and I am 26 years old. I was born in beautiful Guatemala, where I
+                spent
+                my best years in Barberena, Santa Rosa. Since I was little, I've been the oldest grandchild and
+                the
+                favorite cousin, always surrounded by the love and affection of my family.
+            </p>
+
+            <h3>Guatemala, Guatemala</h3>
+            <hr>
+            <div class="flag">
+                <div class="flag-image">
+                    <img src="images/GuatemalaFlag.webp" alt="Flag of Guatemala">
+                    <p>Official Flag of Guatemala</p>
+                </div>
+                <div class="flag-text">
                     <p>
-                        My name is Brandon Chinchilla, and I am 26 years old. I was born in beautiful Guatemala, where I
-                        spent
-                        my best years in Barberena, Santa Rosa. Since I was little, I've been the oldest grandchild and
-                        the
-                        favorite cousin, always surrounded by the love and affection of my family.
+                        Guatemala (from the Nahuatl Cuauhtemallan, meaning 'place of many trees'), is a country located
+                        in the Americas. According to its constitution, it is a democratic and representative republic
+                        organized for its administration into 22 departments.
                     </p>
-                    <h2>Guatemala, Guatemala</h2>
-                    <div class="country-content">
-                        <div class="country-image">
-                            <img src="images/GuatemalaFlag.webp" alt="Guatemala Flag" width="900px">
-                        </div>
-                        <div class="country-p">
-                            <p>Guatemala (del náhuatl Cuauhtemallan, "lugar de muchos árboles"); es un país situado en
-                                América, según su carta magna, es una república democrática y representativa organizada
-                                para su administración en 22 departamentos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-image">
-                    <img src="images/myProfilePicture.jpeg" alt="My Profile Picture" width="150px">
                 </div>
             </div>
+
         </section>
 
-
-        <section class="card2">
-            <div class="card-header">
-                <h2>Web Dev Resources</h2>
-
-            </div>
-            <div>
-                <nav>
-                    <ul class="navigation" id="resources">
-                        <li><a href="#" title="Dev.to Community">Dev.to Community</a></li>
-                        <li><a href="#" title="Smashing Magazine">Smashing Magazine</a></li>
-                        <li><a href="#" title="CSS Tricks">CSS Tricks</a></li>
-                        <li><a href="#" title="W3 Schools">W3 Schools</a></li>
-                        <li><a href="#" title="Udemy">Udemy</a></li>
-                        <li><a href="#" title="Image Placeholder">Image Placeholder</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <section class="resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                <li><a href="https://placeholder.com" target="_blank">Image Placeholder</a></li>
+            </ul>
         </section>
     </main>
+
     <footer>
-        <p>
-            <span id="currentyear">
-            </span>
-            Brandon Chinchilla
-            Guatemala
-        </p>
-        <p id="lastModified"></p>
+        <p>©2025 Brandon Chinchilla Guatemala</p>
+        <p><span>Last Modification: 01/09/2025 12:13:33</span></p>
     </footer>
+
 </body>
 
 </html>

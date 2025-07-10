@@ -1,161 +1,143 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
 header {
-
-    background: lightblue;
-    padding: 2rem;
-    grid-column: 1 / 4;
-
+  background-color: #1e3a5f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-main {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+header h1 {
+  font-size: 1.5rem;
 }
 
-h1 {
-    grid-column: 1 / 4;
+header span {
+  color: #f9d923; 
 }
-
 
 nav {
-    margin: 0 auto 2rem;
-    max-width: 90vw;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 0.8rem 0;
 }
 
-.navigation {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #333;
-    align-items: center;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.navigation li {
-    flex: 1 1 auto;
+nav a:hover {
+  text-decoration: underline;
 }
 
-.navigation a {
-    display: block;
-    color: #eee;
-    padding: 0.75rem;
-    text-decoration: none;
-    text-align: center;
-}
-
-.navigation a:hover {
-    font-weight: 700;
-    text-decoration: underline;
-    text-decoration-color: lightblue;
-}
-
-body,
-header,
 main {
-    font-family: "Libertinus Mono", monospace;
-    font-size: 14px;
-    font-style: normal;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.title {
-    text-align: center;
-    font-size: 2rem;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about,
+.resources {
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  flex: 1 1 40%;
+  max-width: 500px;
+  
 }
 
 
-.card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    transition: transform 0.2s ease;
-    border-radius: 12px; 
+.about h2,
+.resources h2 {
+  background-color: #1e3a5f;
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.about img {
+  float: right;
+  margin-left: 1rem;
+  border-radius: 6px;
+  max-width: 150px;
 }
 
-.card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+.flag {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-.card2 {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    transition: transform 0.2s ease;
-    border-radius: 12px; 
+.flag-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100px;
 }
 
-.card2:hover {
-    transform: translateY(-5px);
+.flag-image img {
+  width: 80px;
+  height: auto;
 }
 
-.card2 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+.flag-image p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
 }
 
-.card-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-grow: 1;
+.flag-text {
+  flex: 1;
+}
+
+
+.resources ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  
+}
+
+.resources a {
+  color: #0000ee;
+  text-decoration: underline;
 }
 
 footer {
-    background: lightblue;
-    padding: 2rem;
+  background-color: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+footer span {
+  color: #f9d923;
+}
+
+h3 {
     text-align: center;
-    grid-column: 1 / 4;
-}
-
-#resources {
-    background-color: #ffffff;
-    display: list-item;
-}
-
-#resources a {
-    color: black;
-}
-
-.card-text {
-    max-width: 410px;
-    margin: 10px;
-}
-
-.card-image {
-    margin: 10px;
-}
-
-.card-header{    
-margin: 0 auto;
-text-align: center;
-color: white;
-background-color: lightblue;
-
-}
-
-.country-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.country-image {
-    margin: 2px;
-}
-
-.country-p {
-    margin: 2px;
 }
