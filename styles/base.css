@@ -22,7 +22,9 @@ header h1 {
     font-size: 1.5rem;
 }
 
-
+h1 span{
+    color: yellow;
+}
 
 nav {
     background-color: #333;
@@ -132,7 +134,7 @@ footer {
 }
 
 footer span {
-    color: #f9d923;
+    color: yellow;
 }
 
 h3 {
