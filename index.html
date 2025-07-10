@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> WDD 131 - Dynamic Web Fundamentals Brandon Chinchilla</title>
+    <title> WDD 131 - Dynamic Web Fundamentals - Brandon Chinchilla</title>
 
     <meta name="course" content="WDD 131 - Dynamic Web Fundamentals">
     <meta name="author" content="Brandon Chinchilla">
@@ -34,40 +34,46 @@
         </nav>
 
     </header>
-    <main>
-      
+    <main style="margin: 40px;">
         <section class="card">
-            <h2>About Me</h2>
-            <img src="images/myProfilePicture.jpeg" alt="My Profile Picture" width="200" height="300">
-             <h1>
-            Brandon Chinchilla
-        </h1>
-            <p>
-                My name is Brandon Chinchilla, and I am 26 years old. I was born in beautiful Guatemala, where I spent
-                my best years in Barberena, Santa Rosa. Since I was little, I've been the oldest grandchild and the
-                favorite cousin, always surrounded by the love and affection of my family.
-
-                In my free time, I enjoy various hobbies and interests that enrich my life. I'm passionate about sports
-                and exercise, which help me stay active and healthy. I also have a great interest in music, movies, and
-                series, which allow me to relax and enjoy moments of entertainment.</p>
-            <h2>Guatemala, Guatemala</h2>
-            <img src="images/GuatemalaFlag.webp" alt="Guatemala Flag" width="300" height="200">
-            <p>This is a hole new story about Guatemala</p>
+            <div class="card-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="card-content" style="border: 2px solid black; display: flex; flex-direction: row; justify-content: space-between; flex-grow: 1;">
+                <div>
+                    <h1>
+                        Brandon Chinchilla
+                    </h1>
+                    <p>
+                        My name is Brandon Chinchilla, and I am 26 years old. I was born in beautiful Guatemala, where I spent
+                        my best years in Barberena, Santa Rosa. Since I was little, I've been the oldest grandchild and the
+                        favorite cousin, always surrounded by the love and affection of my family.
+                    </p>
+                    <h2>Guatemala, Guatemala</h2>
+                    <img src="images/GuatemalaFlag.webp" alt="Guatemala Flag" width="300" height="200">
+                    <p>This is a hole new story about Guatemala</p>
+                </div>
+                <div>
+                    <img src="images/myProfilePicture.jpeg" alt="My Profile Picture" width="100%">
+                </div>
+            </div>
         </section>
 
 
         <section class="card2">
             <h2>Web Dev Resources</h2>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#" title="Dev.to Community">Dev.to Community</a></li>
-                    <li><a href="#" title="Smashing Magazine">Smashing Magazine</a></li>
-                    <li><a href="#" title="CSS Tricks">CSS Tricks</a></li>
-                    <li><a href="#" title="W3 Schools">W3 Schools</a></li>
-                    <li><a href="#" title="Udemy">Udemy</a></li>
-                    <li><a href="#" title="Image Placeholder">Image Placeholder</a></li>
-                </ul>
-            </nav>
+            <div>
+                <nav>
+                    <ul class="navigation" id="resources" >
+                        <li><a href="#" title="Dev.to Community">Dev.to Community</a></li>
+                        <li><a href="#" title="Smashing Magazine">Smashing Magazine</a></li>
+                        <li><a href="#" title="CSS Tricks">CSS Tricks</a></li>
+                        <li><a href="#" title="W3 Schools">W3 Schools</a></li>
+                        <li><a href="#" title="Udemy">Udemy</a></li>
+                        <li><a href="#" title="Image Placeholder">Image Placeholder</a></li>
+                    </ul>
+                </nav>
+            </div>
         </section>
     </main>
     <footer>
