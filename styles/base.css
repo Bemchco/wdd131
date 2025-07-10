@@ -1,10 +1,11 @@
 header {
-    
+
     background: lightblue;
     padding: 2rem;
     grid-column: 1 / 4;
-    
+
 }
+
 main {
     display: grid;
     height: 100vh;
@@ -12,7 +13,7 @@ main {
     gap: 20px;
 }
 
-h1{
+h1 {
     grid-column: 1 / 4;
 }
 
@@ -50,64 +51,69 @@ nav {
 
 body,
 header,
-main{
-  font-family: "Libertinus Mono", monospace;
-  font-size: 14px;
-  font-style: normal;
+main {
+    font-family: "Libertinus Mono", monospace;
+    font-size: 14px;
+    font-style: normal;
 }
 
-.title{
+.title {
     text-align: center;
     font-size: 2rem;
     color: white;
     display: flex;
-  justify-content: center;
-  align-items: center;    
+    justify-content: center;
+    align-items: center;
 }
 
 
 .card {
- background-color: white;
- border-radius: 8px;
- box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
- padding: 1rem;
- transition: transform 0.2s ease;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.2s ease;
+    border-radius: 12px; 
 }
 
 .card:hover {
- transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .card img {
-max-width: 100%;
- height: auto;
- border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
 .card2 {
- background-color: white;
- border-radius: 8px;
- box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
- padding: 1rem;
- transition: transform 0.2s ease;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.2s ease;
+    border-radius: 12px; 
 }
 
 .card2:hover {
- transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .card2 img {
-max-width: 100%;
- height: auto;
- border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
-.card-content{
-    border: 2px solid black; display: flex; flex-direction: row; justify-content: space-between; flex-grow: 1;
+.card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
-footer{
-      background: lightblue;
+footer {
+    background: lightblue;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 4;
@@ -122,17 +128,34 @@ footer{
     color: black;
 }
 
-.card-text{
-    max-width: 300px;
+.card-text {
+    max-width: 410px;
     margin: 10px;
 }
 
-.card-image{
+.card-image {
     margin: 10px;
 }
 
-.country-content{
+.card-header{    
+margin: 0 auto;
+text-align: center;
+color: white;
+background-color: lightblue;
+
+}
+
+.country-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.country-image {
+    margin: 2px;
+}
+
+.country-p {
+    margin: 2px;
 }
