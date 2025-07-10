@@ -102,7 +102,9 @@ max-width: 100%;
  border-radius: 4px;
 }
 
-
+.card-content{
+    border: 2px solid black; display: flex; flex-direction: row; justify-content: space-between; flex-grow: 1;
+}
 
 footer{
       background: lightblue;
