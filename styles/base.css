@@ -52,7 +52,7 @@ body,
 header,
 main{
   font-family: "Libertinus Mono", monospace;
-  font-weight: 400;
+  font-size: 14px;
   font-style: normal;
 }
 
@@ -120,4 +120,19 @@ footer{
 
 #resources a {
     color: black;
+}
+
+.card-text{
+    max-width: 300px;
+    margin: 10px;
+}
+
+.card-image{
+    margin: 10px;
+}
+
+.country-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
