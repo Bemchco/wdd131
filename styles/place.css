@@ -250,4 +250,8 @@ h2.data-title {
   margin-top: 1.5rem;
   text-align: center;
 }
+.weather-section:hover,
+.data-section:hover{
+  background: rgba(255, 255, 255, 0.80);
+}
 
