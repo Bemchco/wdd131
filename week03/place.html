@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place Title</title>
+
+  <link rel="stylesheet" href="./styles/place.css" />
+
+  <script src="./scripts/place.js" defer></script>
+</head>
+
+<body>
+
+  <header class="page-header">
+    Guatemala
+  </header>
+
+  <section class="hero">
+    <picture>
+      <!-- Large image for desktops -->
+      <source srcset="images/hero-large.webp" media="(min-width: 1024px)" />
+
+      <!-- Medium image for tablets -->
+      <source srcset="images/hero-medium.webp" media="(min-width: 600px)" />
+
+      <!-- Small fallback image for mobile -->
+      <img src="images/imagehero-small.webp" alt="Temple exterior" class="hero-image" />
+    </picture>
+
+    <section class="section data-section">
+      <div class="data-header">Data</div>
+      <div class="data-list">
+        <div>Area</div>
+        <div>108 889 km²</div>
+        <div>Population</div>
+        <div>18 000 000</div>
+        <div>Capital</div>
+        <div>Guatemala City</div>
+        <div>Official Language</div>
+        <div>Spanish</div>
+        <div>Currency</div>
+        <div>Quetzal</div>
+      </div>
+    </section>
+
+    <section class="weather-section">
+      <div class="weather-header">
+        Weather
+
+      </div>
+      <span class="weather-icon">
+        <img src="images/weather-icon.svg" alt="Weather icon" />
+      </span>
+      <div class="weather-list">
+        <div>Temperature:</div>
+        <div>10 °C</div>
+        <div>Conditions:</div>
+        <div>Partly Cloudy</div>
+        <div>Wind:</div>
+        <div>5 km/h</div>
+        <div>Wind Chill:</div>
+        <div>N/A</div>
+      </div>
+    </section>
+  </section>
+
+  <footer class="page-footer">
+    copyright - Brandon Chinchilla - Guatemala<br>
+    Last modified: <span id="last-modified"></span>
+  </footer>
+
+</body>
+
+</html>

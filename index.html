@@ -74,6 +74,16 @@
                 <li><a href="https://placeholder.com" target="_blank">Image Placeholder</a></li>
             </ul>
         </section>
+
+        <section class="resize-image">
+            <h2>Image Resize Tool</h2>
+            <form action="http://127.0.0.1:5000/resize" method="post" enctype="multipart/form-data">
+                <input type="file" name="image" required>
+                <input type="number" name="width" placeholder="Width (optional)">
+                <input type="number" name="height" placeholder="Height (optional)">
+                <button type="submit">Resize Image</button>
+            </form>
+        </section>
     </main>
 
     <footer>
