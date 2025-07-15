@@ -1,0 +1,58 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+.banner {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+}
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+	display: grid;
+}
+
+
+h2 {
+	color: navy;
+	text-align: left;
+}
+
+article p {
+	text-align: justify;
+}
+
+.callout {
+	color: white;
+	background-color: black;
+	padding: 1rem;
+}
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	text-align: left;
+}
+
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+main > h2 {
+    grid-column: 1 / -1;
+}
