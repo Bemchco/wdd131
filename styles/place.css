@@ -227,7 +227,7 @@ body {
 
 
 .page-header h1 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 5rem);
 }
 
 @media (min-width: 600px) {
@@ -241,3 +241,13 @@ body {
     font-size: 5rem;
   }
 }
+
+h2.weather-title,
+h2.data-title {
+  background: rgb(73, 151, 208, 0.50);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
