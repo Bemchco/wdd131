@@ -4,28 +4,34 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --main-bg-color: #fff;
+  --main-contrast-color: #4997d0;
+  --main-text-color: #222;
+  --box-color: rgba(255, 255, 255, 0.50);
+}
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
 }
 
 .page-header {
-  background: #4997d0;
-  color: #fff;
+  background: var(--main-contrast-color);
+  color: var(--main-bg-color);
   text-align: center;
   padding: 2rem 1rem 1rem 1rem;
   font-size: 5rem;
   font-weight: bold;
-  border-bottom: 8px solid #ffffff;
+  border-bottom: 8px solid var(--main-bg-color);
 }
 
 .hero {
   width: 100%;
   overflow: hidden;
-  background: #ffffff;
+  background: var(--main-bg-color);
 }
 
 .hero-image {
@@ -34,7 +40,7 @@ body {
   display: block;
   object-fit: cover;
   aspect-ratio: 2 / 1;
-  border-bottom: 8px solid #4997d0;
+  border-bottom: 8px solid var(--main-contrast-color);
 }
 
 .section {
@@ -42,7 +48,7 @@ body {
   border-bottom: 1px solid #eee;
   max-width: 500px;
   margin: 0 auto;
-  background: #fff;
+  background: var(--main-bg-color);
 }
 
 .section h2 {
@@ -82,17 +88,17 @@ body {
 .page-footer {
   text-align: center;
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--main-bg-color);
   padding: 1.5rem 1rem 1rem 1rem;
-  background: #4997d0;
-  border-top: 8px solid #ffffff;
+  background: var(--main-contrast-color);
+  border-top: 8px solid var(--main-bg-color);
   margin-top: 2rem;
 }
 
 .data-header,
 .weather-header {
-  background: #4997d0;
-  background: rgba(255, 255, 255, 0.50); 
+  background: var(--main-contrast-color);
+  background: var(--box-color);
   font-size: 1.5rem;
   font-weight: bold;
   padding: 0.75rem 1rem;
@@ -116,7 +122,7 @@ body {
 
 .data-list,
 .weather-list {
-  background: rgba(255, 255, 255, 0.50); 
+  background: var(--box-color);
   padding: 1.25rem 1rem;
   border-radius: 0 0 6px 6px;
   font-size: 1.1rem;
@@ -168,7 +174,7 @@ body {
     top: 2vw; 
     bottom: auto;    
     width: 300px;
-    background: rgba(255, 255, 255, 0.50); 
+    background: var(--box-color);
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     border-radius: 8px;
     z-index: 2;
@@ -180,7 +186,7 @@ body {
     bottom: 2vw; 
     top: auto;    
     width: 300px;
-    background: rgba(255, 255, 255, 0.50); 
+    background: var(--box-color);
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     border-radius: 8px;
     z-index: 2;
@@ -211,7 +217,7 @@ body {
     box-shadow: none;
     border-radius: 0;
     margin: 0 auto 1rem auto;
-    background: rgba(255, 255, 255, 0.50); 
+    background: var(--box-color);
   }
   .hero-image {
     width: 100%;
@@ -244,7 +250,8 @@ body {
 
 h2.weather-title,
 h2.data-title {
-  background: rgb(73, 151, 208, 0.50);
+  color: var(--main-text-color);
+  background: var(--main-bg-color);
   font-size: 2rem;
   font-weight: bold;
   margin-top: 1.5rem;
