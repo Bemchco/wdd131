@@ -200,7 +200,6 @@ body {
   }
 }
 
-/* For smaller screens, keep sections stacked */
 @media (max-width: 699px) {
   body {
     display: block;
