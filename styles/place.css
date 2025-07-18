@@ -290,10 +290,18 @@ h2.data-title {
   }
 }
 
-.weather-icon::after {
-  content: url('weather-icon.svg');
-  vertical-align: middle;
-  filter: drop-shadow(var(--weather-icon-glow));
-  animation: pulse 2s infinite ease-in-out;
+
+@media (min-width: 700px) {
+  .weather-title::after {
+    content: url('images/weather-icon.svg');
+    display: inline-block;
+    width: var(--weather-icon-size);
+    height: var(--weather-icon-size);
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    filter: drop-shadow(var(--weather-icon-glow));
+    animation: pulse 2s infinite ease-in-out;
+  }
 }
+
 
