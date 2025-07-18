@@ -294,8 +294,8 @@ h2.data-title {
 }
 
 
-@media (min-width: 700px) {
-  .weather-title::after {
+@media (min-width: 1500px) {
+  .weather-icon::after {
     content: url('images/weather-icon.svg');
     display: inline-block;
     width: var(--weather-icon-size);
