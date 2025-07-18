@@ -18,6 +18,7 @@
   --weather-icon-glow-focus-hover: 0 0 14px rgba(73, 151, 208, 0.8);
   --weather-icon-glow-focus-active: 0 0 18px rgba(73, 151, 208, 1);
   --weather-icon-glow-focus-active-hover: 0 0 20px rgba(73, 151, 208, 1);
+  --font-family: 'Bitcount Grid Single', sans-serif;
 }
 
 body {
@@ -49,14 +50,14 @@ main {
 
 
 .hero {
+  font-family: var(--font-family);          
   width: 100vw;
   overflow: hidden;
   background: var(--main-bg-color);
   margin: 0 auto;
   padding: 0;
+ 
 }
-
-
 
 .hero-image {
   width: 100%;
