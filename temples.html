@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temple Album</title>
 
@@ -56,8 +56,6 @@
         </section>
     </main>
 
-    <footer>
-
         <footer>
             <p>&copy; <span id="year"></span> Your Name</p>
             <p>Last modified: <span id="lastModified"></span></p>
@@ -65,15 +63,3 @@
 </body>
 
 </html>
-<script>
-    // Set the current year in the footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Set the last modified date in the footer
-    document.getElementById('lastModified').textContent = document.lastModified;
-
-    // Toggle navigation menu visibility
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-        const navMenu = document.getElementById('nav-menu');
-        navMenu.classList.toggle('visible');
-    });
