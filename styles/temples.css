@@ -1,6 +1,3 @@
-/* temples.css */
-
-/* Google Fonts */
 .libertinus-mono-regular {
   font-family: "Libertinus Mono", monospace;
   font-weight: 400;
@@ -16,13 +13,18 @@ body {
   color: #333;
 }
 
-/* Header */
 header {
   background-color: #004d99;
   color: white;
   padding: 1rem;
   text-align: center;
 }
+h2 {
+  margin: 0;
+  text-align: center;
+}
+
+
 
 nav {
   display: flex;
@@ -41,29 +43,32 @@ nav a {
 nav a:hover {
   background-color: #0066cc;
 }
-
-/* Hamburger Menu */
 .hamburger {
   display: block;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
-  margin: 0.5rem;
+  cursor: pointer;
 }
+
+
 
 nav ul {
   display: none;
   flex-direction: column;
-  list-style: none;
+  gap: 0.5rem;
   padding: 0;
+  list-style: none;
 }
+
+
 
 nav ul.show {
   display: flex;
 }
 
-/* Main */
+
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -75,7 +80,6 @@ main h1 {
   margin-bottom: 1rem;
 }
 
-/* Grid Layout */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -94,7 +98,6 @@ figcaption {
   font-weight: bold;
 }
 
-/* Footer */
 footer {
   background-color: #004d99;
   color: white;
