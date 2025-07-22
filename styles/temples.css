@@ -122,7 +122,9 @@ footer {
     font-size: 1.2rem;
   }
 
-  .grid-container {
+  .gallery {
+    max-width: 1200px;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
   }
