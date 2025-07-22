@@ -1,0 +1,15 @@
+/* temples-large.css */
+.libertinus-mono-regular {
+  font-family: "Libertinus Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

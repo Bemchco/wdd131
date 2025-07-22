@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Album</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Bitcount+Prop+Single:wght@100..900&family=Libertinus+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS: Mobile First -->
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)" />
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+
+        <button class="hamburger" aria-label="Toggle Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Temples Around the World</h1>
+        <section class="gallery">
+            <!-- Placeholder temple figures -->
+            <figure>
+                https://via.placeholder.com/300x200
+                <figcaption>Temple 1</figcaption>
+            </figure>
+            <figure>
+                https://via.placeholder.com/300x200
+                <figcaption>Temple 2</figcaption>
+            </figure>
+            <figure>
+                https://via.placeholder.com/300x200
+                <figcaption>Temple 3</figcaption>
+            </figure>
+            <!-- Add at least 6 more figures -->
+        </section>
+    </main>
+
+    <footer>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Your Name</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </footer>
+</body>
+
+</html>
+<script>
+    // Set the current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Set the last modified date in the footer
+    document.getElementById('lastModified').textContent = document.lastModified;
+
+    // Toggle navigation menu visibility
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        const navMenu = document.getElementById('nav-menu');
+        navMenu.classList.toggle('visible');
+    });
