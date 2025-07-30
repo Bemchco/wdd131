@@ -1,0 +1,38 @@
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeFromBlack 2s ease-in forwards;
+    background-color: black;
+}
+p {
+
+    text-align: center;
+}
+h1 {
+
+    text-align: center;
+}
+header {
+    text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+span {
+    font-weight: bold;
+}
+
+@keyframes fadeFromBlack {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
