@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const hamburgerBtn = document.querySelector(".hamburger");
-  const navMenu = document.querySelector("nav button");
+  const navMenu = document.querySelector("nav ul");
 
   hamburgerBtn.addEventListener("click", () => {
     navMenu.classList.toggle("show");
