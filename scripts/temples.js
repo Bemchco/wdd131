@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const hamburgerBtn = document.querySelector(".hamburger");
-const navMenu = document.querySelector("nav ul");
+  const navMenu = document.querySelector("nav ul");
 
-hamburgerBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
-  hamburgerBtn.textContent = navMenu.classList.contains("show") ? "✖" : "☰";
-});
+  hamburgerBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+    hamburgerBtn.textContent = navMenu.classList.contains("show") ? "✖" : "☰";
+  });
 
 });
