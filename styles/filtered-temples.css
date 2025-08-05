@@ -83,18 +83,28 @@ main h1 {
 }
 
 
-.temple-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px;
-  max-width: 300px;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+#temple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
 }
 
+.temple-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.2s ease;
+    border: 1px solid #ccc;
+    margin: 16px;
+    max-width: 300px;   
+    text-align: center;
+}
+
+
 .temple-card img {
-  width: 100%;
-  border-radius: 4px;
+    width: 100%;
+    border-radius: 4px;
 }
 
 
