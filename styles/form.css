@@ -1,7 +1,7 @@
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: "Libertinus Mono", monospace;;
 }
 
 
@@ -39,7 +39,7 @@ main {
     margin: 2rem 0;
     border: 1px solid #ddd;
     border-radius: 6px;
-    padding: .5re 2%;
+    padding: .5rem 2%;
 }
 
 .wf1 legend,
@@ -62,10 +62,6 @@ main {
 .stars label {
     font-size: 1.5em;
     cursor: pointer;
-}
-
-.stars input[type="radio"] {
-    display: show;
 }
 
 .stars label:hover,
