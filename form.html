@@ -8,20 +8,14 @@
     <title>WDD 131: Product Review Form - Brandon Chinchilla</title>
     <meta name="course" content="WDD 131 - Dynamic Web Fundamentals">
     <meta name="author" content="Brandon Chinchilla">
-    <meta name="description"
-        content="This page will be a form for submitting product reviews for the WDD 131 course">
+    <meta name="description" content="This page will be a form for submitting product reviews for the WDD 131 course">
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Bitcount+Prop+Single:wght@100..900&family=Libertinus+Mono&display=swap"
-        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/form.css" />
 
     <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Product Review</h1>
@@ -30,7 +24,90 @@
     <main>
 
         <h2>Submit Your Review</h2>
-        <div id="temple-container"></div>
+        <form id="reviewForm" method="get" action="review.html" class="wf1">
+
+            <fieldset>
+                <legend>Product</legend>
+                <div>Product Name:</div>
+                <label>Product Name
+                    <select name="product" id="product" required>
+                        <option disabled selected value="">Select a Product ...</option>
+                    </select>
+                </label>
+
+                <fieldset class="stars">
+                    <legend>Rating</legend>
+                    <label>&#9733;
+                        <input type="radio" name="rating" id="stars1" value="1" required>
+                    </label>
+                    <label>&#9733; &#9733;
+                        <input type="radio" name="rating" id="stars2" value="2" required>
+                    </label>
+                    <label>&#9733; &#9733; &#9733;
+                        <input type="radio" name="rating" id="stars3" value="3" required>
+                    </label>
+                    <label>&#9733; &#9733; &#9733; &#9733;
+                        <input type="radio" name="rating" id="stars4" value="4" required>
+                    </label>
+                    <label>&#9733; &#9733; &#9733; &#9733; &#9733;
+                        <input type="radio" name="rating" id="stars5" value="5" required>
+                    </label>
+                </fieldset>
+
+            </fieldset>
+
+
+
+
+            <fieldset>
+                <legend>Produc Usage</legend>
+                <label>Date of Installation:
+                    <input type="date" name="installDate" id="dateOfInstallation" required>
+                </label>
+                <div>
+
+                    Wich features did you find usefull in the product:
+
+                </div>
+                <div>
+                    (Check all that apply)
+                </div>
+                <label>
+                    <input type="checkbox" name="features" id="Usage1" value="Daurability">
+                    Daurability
+                </label><br>
+                <label>
+                    <input type="checkbox" name="features" id="Usage2" value="Ease of Use">
+                    Ease of Use
+                </label><br>
+                <label>
+                    <input type="checkbox" name="features" id="Usage3" value="Performance">
+                    Performance
+                </label><br>
+                <label>
+                    <input type="checkbox" name="features" id="Usage4" value="Design">
+                    Design
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Comments</legend>
+                <label>Written Review:
+
+                    <textarea name="review" id="writtenReview" rows="4" cols="50"></textarea>
+                </label><br>
+
+
+                <label>Your Name (optional):
+
+                    <input type="text" id="userName" name="userName" autocomplete="given-name" />
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send Review">
+
+
+        </form>
+
     </main>
     <footer>
         <p>&copy; <span id="year"></span> Brandon Chinchilla</p>
