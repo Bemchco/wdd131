@@ -44,13 +44,18 @@ products.forEach(product => {
 
 const form = document.getElementById('reviewForm');
 form.addEventListener('submit', (e) => {
-    if (!sel.value) {
-        e.preventDefault();
-  try {
-    sessionStorage.setItem('justSubmittedReview','true');
-  } catch (err) { console.error(err); }
-  form.submit();
+    try {
+        sessionStorage.setItem('justSubmittedReview', 'true');
+    } catch (err) {
+        console.error(err);
     }
+    document.addEventListener('DOMContentLoaded', function () {
+        var dateInput = document.getElementById('dateOfInstallation');
+        if (dateInput) {
+            var today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('max', today);
+        }
+    });
 });
 
 

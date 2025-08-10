@@ -1,30 +1,54 @@
+:root {
+  --brand: #d72638;
+  --accent: #004d99;
+  --header-bg: #fff;
+  --header-text: var(--brand);
+  --form-label: purple;
+  --form-label-bold: #0b0014ff;
+  --form-border: #ddd;
+  --form-radius: 6px;
+  --form-input-bg: #fff;
+  --form-input-border: #999;
+  --form-input-radius: 6px;
+  --form-submit-bg: var(--accent);
+  --form-submit-color: #fff;
+  --form-submit-shadow: 1px 1px 3px #999;
+  --form-required: #f00;
+  --form-valid: #0f0;
+  --footer-bg: var(--accent);
+  --footer-color: #fff;
+  --star: gold;
+}
+
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: "Libertinus Mono", monospace;;
+    font-family: "Libertinus Mono", monospace;
 }
-
 
 /*----------- HEADER --------------*/
 header {
-    color: #d72638ff;
-    padding: .5rem 2%;
-    background-color: white;
+    background-color: var(--accent); /* púrpura oscuro como en la imagen */
+    color: var(--header-bg); /* texto blanco */
+    text-align: center; /* centrar el texto horizontalmente */
+    padding: 20px 0; /* espacio arriba y abajo */
+    font-family: "Libertinus Mono", monospace; /* tipografía simple */
 }
 
 header h1 {
-    color: #d72638ff;
-    margin: 0;
+    margin: 0; /* eliminar margen por defecto */
+    font-size: 2em; /* tamaño del texto */
+    font-weight: bold;
 }
 
 header h2 {
-    color: #d72638ff;
+    color: var(--header-text);
     margin: 0;
     font-weight: normal;
 }
 
 h2 {
-    color: #d72638ff;
+    color: var(--form-label);
 }
 
 /*----------- MAIN --------------*/
@@ -37,14 +61,14 @@ main {
 
 .wf1 fieldset {
     margin: 2rem 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+    border: 1px solid var(--form-border);
+    border-radius: var(--form-radius);
     padding: .5rem 2%;
 }
 
 .wf1 legend,
 .wf1 label {
-    color: purple;
+    color: var(--form-label);
     font-weight: bold;
     padding: 0 .5rem;
 }
@@ -52,7 +76,7 @@ main {
 .wf1 label {
     display: block;
     padding-top: 1rem;
-    color: #0b0014ff;
+    color: var(--form-label-bold);
     font-size: .9rem;
     flex-direction: column;
 }
@@ -68,62 +92,99 @@ main{
 
 .stars label:hover,
 .stars input[type="radio"]:checked~label {
-    color: gold;
+    color: var(--star);
 }
 
 .wf1 div {
     padding-top: 1rem;
-    color: purple;
+    color: var(--form-label);
     font-size: .9rem;
     font-weight: bold;
 }
 
 .wf1 input[type="text"],
-.wf1 input[type="date"],
-.wf1 textarea,
-.wf1 select {
-    background-color: white;
+.wf1 textarea {
+    background-color: var(--form-input-bg);
     display: block;
-    border: solid 1px #999;
-    border-radius: 6px;
-    padding: .75rem;
-    color: #0b0014ff;
+    border: solid 1px var(--form-input-border);
+    border-radius: var(--form-input-radius);
+    padding: 1rem;
+    color: var(--form-label-bold);
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
     appearance: none;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.wf1 input[type="date"],
+.wf1 select {
+    background-color: var(--form-input-bg);
+    display: block;
+    border: solid 1px var(--form-input-border);
+    border-radius: var(--form-input-radius);
+    padding: 1rem;
+    color: var(--form-label-bold);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    appearance: none;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--form-border);
+    border-radius: var(--form-radius);
+    padding: 1rem 1%;
+    background: #fafaff;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .wf1 input[type="radio"],
 .wf1 input[type="checkbox"] {
-    margin-right: 6px;
+    margin-right: 8px;
 }
 
 .wf1 input[type="submit"] {
-    background-color: #004d99;
-    color: white;
+    background-color: var(--form-submit-bg);
+    color: var(--form-submit-color);
     border: none;
-    padding: .75rem 1.5rem;
-    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    border-radius: var(--form-input-radius);
     cursor: pointer;
-    width: 96%;
+    width: 100%;
     max-width: 400px;
-    margin: -1rem 2% 2rem 2%;
-    box-shadow: 1px 1px 3px #999;
+    margin: 2rem auto 0 auto;
+    box-shadow: var(--form-submit-shadow);
+    font-size: 1.1rem;
+    display: block;
 }
 
 .wf1 input:required, select:required {
-    border-left: solid 8px #f00;
+    border-left: solid 8px var(--form-required);
 }
 
 .wf1 input:required:valid, select:required:valid {
-    border-left: solid 8px #0f0;
+    border-left: solid 8px var(--form-valid);
 }
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #004d99;
-    color: white;
+    background-color: var(--footer-bg);
+    color: var(--footer-color);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+.wf1 select, .wf1 select option {
+    font-size: 1rem;
+    min-width: 120px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
 }
