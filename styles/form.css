@@ -1,23 +1,23 @@
 :root {
-  --brand: #d72638;
-  --accent: #004d99;
-  --header-bg: #fff;
-  --header-text: var(--brand);
-  --form-label: purple;
-  --form-label-bold: #0b0014ff;
-  --form-border: #ddd;
-  --form-radius: 6px;
-  --form-input-bg: #fff;
-  --form-input-border: #999;
-  --form-input-radius: 6px;
-  --form-submit-bg: var(--accent);
-  --form-submit-color: #fff;
-  --form-submit-shadow: 1px 1px 3px #999;
-  --form-required: #f00;
-  --form-valid: #0f0;
-  --footer-bg: var(--accent);
-  --footer-color: #fff;
-  --star: gold;
+    --brand: #d72638;
+    --accent: #004d99;
+    --header-bg: #fff;
+    --header-text: var(--brand);
+    --form-label: purple;
+    --form-label-bold: #0b0014ff;
+    --form-border: #ddd;
+    --form-radius: 6px;
+    --form-input-bg: #fff;
+    --form-input-border: #999;
+    --form-input-radius: 6px;
+    --form-submit-bg: var(--accent);
+    --form-submit-color: #fff;
+    --form-submit-shadow: 1px 1px 3px #999;
+    --form-required: #f00;
+    --form-valid: #0f0;
+    --footer-bg: var(--accent);
+    --footer-color: #fff;
+    --star: gold;
 }
 
 /*----------- BODY --------------*/
@@ -28,7 +28,7 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-   background-color: var(--footer-bg);
+    background-color: var(--footer-bg);
     color: var(--footer-color);
     text-align: center;
     padding: 1rem;
@@ -38,8 +38,8 @@ header {
 }
 
 header h1 {
-    margin: 0; 
-    font-size: 2em; 
+    margin: 0;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -84,9 +84,10 @@ main {
 }
 
 
-main{
+main {
     align-content: center;
 }
+
 .stars label {
     font-size: 1.5em;
     cursor: pointer;
@@ -166,11 +167,13 @@ main{
     display: block;
 }
 
-.wf1 input:required, select:required {
+.wf1 input:required,
+select:required {
     border-left: solid 8px var(--form-required);
 }
 
-.wf1 input:required:valid, select:required:valid {
+.wf1 input:required:valid,
+select:required:valid {
     border-left: solid 8px var(--form-valid);
 }
 
@@ -186,17 +189,20 @@ footer {
 }
 
 /* Sticky footer y centrado de box */
-html, body {
+html,
+body {
     height: 100%;
     min-height: 100vh;
     margin: 0;
     padding: 0;
 }
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 main {
     flex: 1 0 auto;
     min-height: 100vh;
@@ -205,7 +211,8 @@ main {
     justify-content: center;
     padding: 0;
 }
-.card{
+
+.card {
     background-color: var(--form-input-bg);
     padding: 40px 24px;
     border-radius: 15px;
@@ -218,8 +225,9 @@ main {
     overflow-wrap: break-word;
     word-break: break-word;
 }
-.counter{
-    display: flex ;
+
+.counter {
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--form-input-bg);
@@ -233,7 +241,8 @@ main {
     word-break: break-word;
 }
 
-.wf1 select, .wf1 select option {
+.wf1 select,
+.wf1 select option {
     font-size: 1rem;
     min-width: 120px;
     width: 100%;
@@ -241,19 +250,21 @@ main {
     box-sizing: border-box;
 }
 
-.card{
+.card {
     background-color: var(--form-input-bg);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgb(0, 0, 0, 0.1);
     text-align: center;
 }
-.counter{
+
+.counter {
     background-color: var(--form-input-bg);
     padding: 20px;
     border-radius: 20px;
     margin: 20px;
 }
-.counter span{
-font-size: 40px;
+
+.counter span {
+    font-size: 40px;
 }
