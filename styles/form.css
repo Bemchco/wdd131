@@ -28,16 +28,18 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-    background-color: var(--accent); /* púrpura oscuro como en la imagen */
-    color: var(--header-bg); /* texto blanco */
-    text-align: center; /* centrar el texto horizontalmente */
-    padding: 20px 0; /* espacio arriba y abajo */
-    font-family: "Libertinus Mono", monospace; /* tipografía simple */
+   background-color: var(--footer-bg);
+    color: var(--footer-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 header h1 {
-    margin: 0; /* eliminar margen por defecto */
-    font-size: 2em; /* tamaño del texto */
+    margin: 0; 
+    font-size: 2em; 
     font-weight: bold;
 }
 
@@ -178,7 +180,57 @@ footer {
     color: var(--footer-color);
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 0;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+/* Sticky footer y centrado de box */
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.card{
+    background-color: var(--form-input-bg);
+    padding: 40px 24px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgb(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.counter{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--form-input-bg);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 2rem auto;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .wf1 select, .wf1 select option {
@@ -187,4 +239,21 @@ footer {
     width: 100%;
     max-width: 300px;
     box-sizing: border-box;
+}
+
+.card{
+    background-color: var(--form-input-bg);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgb(0, 0, 0, 0.1);
+    text-align: center;
+}
+.counter{
+    background-color: var(--form-input-bg);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.counter span{
+font-size: 40px;
 }
