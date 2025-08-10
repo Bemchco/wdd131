@@ -44,7 +44,7 @@ main {
 
 .wf1 legend,
 .wf1 label {
-    color: #d72638ff;
+    color: purple;
     font-weight: bold;
     padding: 0 .5rem;
 }
@@ -75,7 +75,7 @@ main {
 
 .wf1 div {
     padding-top: 1rem;
-    color: #d72638ff;
+    color: purple;
     font-size: .9rem;
     font-weight: bold;
 }
@@ -101,7 +101,7 @@ main {
 }
 
 .wf1 input[type="submit"] {
-    background-color: #007bff;
+    background-color: #004d99;
     color: white;
     border: none;
     padding: .75rem 1.5rem;
