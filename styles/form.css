@@ -58,7 +58,9 @@ main {
 }
 
 
-
+main{
+    align-content: center;
+}
 .stars label {
     font-size: 1.5em;
     cursor: pointer;
