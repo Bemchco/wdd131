@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
   const conf = document.getElementById('confirmation');
 
-  // Incrementar solo si venimos del form y no en recargas
   if (sessionStorage.getItem('justSubmittedReview') === 'true') {
     const key = 'reviews_submitted_count';
     const current = parseInt(localStorage.getItem(key) || '0', 10);
