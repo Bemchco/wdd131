@@ -12,6 +12,7 @@
 }
 header {
 background-color: var(--tittle-background-color);    
+color: var(--primary-color);
 }
 span {
     background-color: var(--tittle-background-color);
@@ -31,6 +32,7 @@ nav {
     margin: 0 auto;
     max-width: 2000px;
     font-size: clamp(0.5rem, calc(1vw + 0.3rem), 2rem);
+    color: var(--primary-color);
 }
 
 nav ul {
