@@ -10,7 +10,9 @@
     --tittle-background-color: darkblue;
 
 }
-
+header {
+background-color: var(--tittle-background-color);    
+}
 span {
     background-color: var(--tittle-background-color);
     color: var(--primary-color);
