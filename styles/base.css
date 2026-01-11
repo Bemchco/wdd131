@@ -14,7 +14,6 @@
 span {
     background-color: var(--tittle-background-color);
     color: var(--primary-color);
-    font-weight: 100;
     text-align: center;
     padding: min(1rem, 8%);
 
