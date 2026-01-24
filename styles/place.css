@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --tittle-background-color: #1A4666;
+    --accent-color: #C8DFF0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: var(--tittle-background-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-bottom: 1rem solid var(--secondary-color);
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: clamp(2rem, calc(1vw + 0.3rem), 2rem);
+}
+
+.animal img {
+    display: block;
+    max-width: 500px;
+    height: auto;
+    border-bottom: 5px solid var(--tittle-background-color);
+}
+
+.data {
+    padding: 1rem;
+    font-size: clamp(1rem, calc(1vw + 0.3rem), 1.5rem);
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+h2 {
+    text-align: center;
+    font-size: clamp(1.5rem, calc(1vw + 0.3rem), 2rem);
+    margin: 1rem 1rem;
+
+}
+
+.weather {
+    padding: 1rem;
+    font-size: clamp(1rem, calc(1vw + 0.3rem), 1.5rem);
+    text-align: center;
+
+}
+.weather img {
+    display: block;
+    margin: 0 auto;
+    width: 25px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--tittle-background-color);
+    color: var(--secondary-color);
+    font-weight: 200;
+    text-align: center;
+    padding: min(1rem, 8%);
+}
+
+footer p {
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+    word-wrap: break-word;
+}
+
+#lastModified {
+    color: var(--accent-color);
+    font-weight: 200;
+}

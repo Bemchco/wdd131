@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <meta name="author" content="Brandon Chinchilla">
+    <meta name="description"
+        content="This is the place page for the class WDD 131 - Dynamic Web Fundamentals by Brandon Emmanuel Chinchilla Corleto">
+    <script defer src="scripts/place.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Guatemala</h1>
+    </header>
+    <main>
+        <div class="container">  
+        <div class="animal">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/quetzal-large.webp">
+                <source media="(min-width: 500px)" srcset="images/quetzal-medium.webp">
+                <img src="images/quetzal-small.webp" alt="Quetzal" width="500" height="250">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <div>
+                <p>Area: <span id="area"></span></p>
+                <p>Population: <span id="population"></span></p>
+                <p>Capital: <span id="capital"></span></p>
+                <p>Official Language: <span id="language"></span></p>
+                <p>Currency: <span id="currency"></span></p>
+                <p>Time Zone: <span id="timezone"></span></p>
+                <p>Calling Code: <span id="callingcode"></span></p>
+                <p>Internet TLD: <span id="tld"></span></p>
+            </div>
+
+        </div>
+        <div class="weather">
+            <h2>Weather
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/weather-icon-large.webp">
+                    <source media="(min-width: 500px)" srcset="images/weather-icon-large.webp">
+                    <img src="images/weather-svg-small.svg" alt="Weather Icon" width="25" height="13">
+                </picture>
+            </h2>
+            <div>
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Conditions: <span id="conditions"></span></p>
+                <p>Wind: <span id="wind"></span></p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"> </span> Brandon Emmanuel Chinchilla Corleto - Gutemala, Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
