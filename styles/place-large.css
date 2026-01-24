@@ -18,9 +18,13 @@
     h2 img {
         filter: invert(100%);
     }
+    
 
     .weather img {
         display: inline-block;
+    }
+    .weather img::after,.weather img:hover {
+        width:50px;
     }
 
     .animal {
