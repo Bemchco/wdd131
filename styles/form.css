@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #f9f9f9;
+    --accent-color: #4a90e2;
+    --text-color: #333;
+    --border-color: #ccc;
+    --font-family: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* Radio and Checkbox styling */
+.rating-group label,
+.checkbox-group label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.required {
+    color: #d9534f;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #357abd;
+}
+
+/* Review Page Styling */
+.review-container {
+    text-align: center;
+}
+
+.counter-display {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 2rem;
+}
+
+#lastModified {
+    color: #ffeb3b;
+    font-size: 0.9rem;
+}

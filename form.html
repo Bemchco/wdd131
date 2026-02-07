@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form - WDD 131</title>
+    <meta name="description" content="Product Review Form for WDD 131 assignment">
+    <meta name="author" content="Brandon Chinchilla">
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Details</legend>
+                <label for="productName">Product Name <span class="required">*</span></label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+
+                <label for="installationDate">Date of Installation <span class="required">*</span></label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating <span class="required">*</span></legend>
+                <div class="rating-group">
+                    <label><input type="radio" name="rating" value="1" required> ☆</label>
+                    <label><input type="radio" name="rating" value="2"> ☆☆</label>
+                    <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+                    <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Useful Features (Check all that apply)</legend>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                    <label><input type="checkbox" name="features" value="easeOfUse"> Ease of Use</label>
+                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Written Review</legend>
+                <label for="review">Your Review (Optional)</label>
+                <textarea id="review" name="review" rows="5"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>User Information</legend>
+                <label for="userName">Your Name (Optional)</label>
+                <input type="text" id="userName" name="userName">
+            </fieldset>
+
+            <input type="submit" value="Post Review" class="submit-btn">
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Brandon Emmanuel Chinchilla Corleto - Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
