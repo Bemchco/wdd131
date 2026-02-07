@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form - WDD 131</title>
-    <meta name="description" content="Product Review Form for WDD 131 assignment">
+    <meta name="description" content="This product review form allows users to rate products, select installation dates, and provide feedback for the WDD 131 class assignment.">
     <meta name="author" content="Brandon Chinchilla">
     <link rel="stylesheet" href="styles/form.css">
     <script defer src="scripts/form.js"></script>
@@ -33,21 +33,21 @@
             <fieldset>
                 <legend>Overall Rating <span class="required">*</span></legend>
                 <div class="rating-group">
-                    <label><input type="radio" name="rating" value="1" required> ☆</label>
-                    <label><input type="radio" name="rating" value="2"> ☆☆</label>
-                    <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-                    <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-                    <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+                    <label for="rating-1"><input type="radio" id="rating-1" name="rating" value="1" required> ☆</label>
+                    <label for="rating-2"><input type="radio" id="rating-2" name="rating" value="2" required> ☆☆</label>
+                    <label for="rating-3"><input type="radio" id="rating-3" name="rating" value="3" required> ☆☆☆</label>
+                    <label for="rating-4"><input type="radio" id="rating-4" name="rating" value="4" required> ☆☆☆☆</label>
+                    <label for="rating-5"><input type="radio" id="rating-5" name="rating" value="5" required> ☆☆☆☆☆</label>
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Useful Features (Check all that apply)</legend>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                    <label><input type="checkbox" name="features" value="easeOfUse"> Ease of Use</label>
-                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                    <label for="feature-durability"><input type="checkbox" id="feature-durability" name="features" value="durability"> Durability</label>
+                    <label for="feature-ease"><input type="checkbox" id="feature-ease" name="features" value="easeOfUse"> Ease of Use</label>
+                    <label for="feature-performance"><input type="checkbox" id="feature-performance" name="features" value="performance"> Performance</label>
+                    <label for="feature-design"><input type="checkbox" id="feature-design" name="features" value="design"> Design</label>
                 </div>
             </fieldset>
 

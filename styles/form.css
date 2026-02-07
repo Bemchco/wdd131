@@ -127,3 +127,10 @@ footer {
     color: #ffeb3b;
     font-size: 0.9rem;
 }
+
+@media (min-width: 40rem) {
+    .checkbox-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
