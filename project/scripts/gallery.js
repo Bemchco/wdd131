@@ -1,4 +1,4 @@
-// Gallery JavaScript
+
 
 const projects = [
     {
@@ -6,7 +6,7 @@ const projects = [
         title: "Corporate Network Install",
         category: "Networking",
         description: "Full structured cabling and server rack installation for a mid-sized office.",
-        imageUrl: "https://placehold.co/600x400/d72638/ffffff?text=Network+Install" // Using placeholder for now as per user instruction allowing ext sources
+        imageUrl: "https://placehold.co/600x400/d72638/ffffff?text=Network+Install"
     },
     {
         id: 2,
@@ -48,10 +48,10 @@ const projects = [
 const galleryContainer = document.getElementById('project-gallery');
 
 if (galleryContainer) {
-    // Clear basic content if any
+
     galleryContainer.innerHTML = '';
 
-    // Iterate and create HTML
+
     projects.forEach(project => {
         const card = document.createElement("div");
         card.classList.add("project-card");

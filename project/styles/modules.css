@@ -3,7 +3,7 @@
     text-align: center;
     color: var(--light-text);
     background-color: #333;
-    /* Fallback */
+
     overflow: hidden;
     border-radius: 8px;
 }
