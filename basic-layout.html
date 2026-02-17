@@ -3,10 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a simple HTML page and basic layout for the WDD131 course.">
     <meta name="author" content="Brandon Chinchilla">
-    <link rel="stylesheet" href="/week01/styles/layout.css">
+    <script defer src="scripts/getdates.js"></script>
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..400&display=swap" rel="stylesheet">
     <title>Brandon Chinchilla - WDD131- Dynamic Web Fundamentals</title>
 </head>
 
@@ -28,12 +32,15 @@
     <main>
         <h2>Main Content</h2>
     </main>
-    <aside class="right-sidebar"><h2>
-        Aside Content
-    </h2></aside>
-    <footer><h3>
-        Footer Content
-    </h3></footer>
+    <aside class="right-sidebar">
+        <h2>
+            Aside Content
+        </h2>
+    </aside>
+    <footer>
+        <p><span id="currentyear"></span> Brandon Emmanuel Chinchilla Corleto - Guatemala, Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 

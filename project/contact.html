@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brandon Chinchilla">
+    <meta name="description" content="Contact REMIS Online for quotes and inquiries.">
+    <title>REMIS Online - Contact Us</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="REMIS Online Logo">
+            <h1>REMIS Online</h1>
+        </div>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Projects</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <h2>Get in Touch</h2>
+            <p>Ready to start your project? Fill out the form below or reach us directly.</p>
+        </section>
+
+        <section class="contact-container">
+            <form id="contact-form" action="#" method="get">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="fname">First Name*</label>
+                    <input type="text" id="fname" name="fname" required>
+
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lname" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="12345678">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Project Details</legend>
+                    <label for="service-type">Service Interested In</label>
+                    <select id="service-type" name="service-type">
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="networking">Networking</option>
+                        <option value="computing">Computer Repair/Assembly</option>
+                        <option value="supplies">Supplies</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Message/Description</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </fieldset>
+
+                <div class="form-feedback" id="form-feedback"></div>
+                <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> Brandon Emmanuel Chinchilla Corleto - Guatemala, Guatemala</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>

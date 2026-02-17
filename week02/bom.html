@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,26 @@
     <meta name="author" content="Brandon Chinchilla">
     <meta name="description"
         content="This is the bom site for the class WDD 131 - Dynamic Web Fundamentals by Brandon Emmanuel Chinchilla Corleto">
-    <script defer src="/week02/scripts/bom.js"></script>
+    <script defer src="../scripts/getdates.js"></script>
+    <script defer src="scripts/bom.js"></script>
     <link rel="stylesheet" href="/week02/styles/bom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..400&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <h1>📖 Book of Mormon - Top 10</h1>
-<main>
-	<label for="favchap">Enter Book and Chapter: </label>
-	<input type="text" id="favchap" placeholder="Alma 5">
-	<button type="submit">Add Chapter</button>
-	<ul id="list"></ul>
-</main>
+    <main>
+        <label for="favchap">Enter Book and Chapter: </label>
+        <input type="text" id="favchap" placeholder="Alma 5">
+        <button type="submit">Add Chapter</button>
+        <ul id="list"></ul>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Brandon Emmanuel Chinchilla Corleto - Guatemala, Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
